@@ -33,6 +33,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.3/purify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"
+        rel="stylesheet">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Source Sans Pro', sans-serif !important;
+        }
+    </style>
 </head>
 <body class="hold-transition">
     <nav class="navbar navbar-default" style="margin-bottom: 0px; background-color: white; border: 0px;">
@@ -49,10 +62,13 @@
                 </h3>
             </div>
             <div ng-show="certverified" style="color:whitesmoke">
-                <h3 class="login-box-msg"><br />AICTE Internship Certificate is successfully verified</h3>
+                <h3 class="login-box-msg">
+                    <img src="https://aictecert.eduskillsfoundation.org/images/checked.gif" width="30%"
+                        onerror="this.style.display='none'" />
+                    <br />
+                    AICTE Internship Certificate is successfully verified
+                </h3>
                 <!-- Added checkmark manually since gif might not load or be cross-origin protected, using font-awesome as backup if image fails -->
-                <center><img src="https://aictecert.eduskillsfoundation.org/images/checked.gif" width="30%"
-                        onerror="this.style.display='none'" /></center>
                 <h4>Certificate ID: {{cert.certid}}</h4>
                 <h4>Issued On: {{cert.certissuedate}}</h4>
                 <h4>Issued To: {{cert.studentname}}</h4>
