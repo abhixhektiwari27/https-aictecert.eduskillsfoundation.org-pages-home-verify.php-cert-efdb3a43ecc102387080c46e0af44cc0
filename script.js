@@ -8,7 +8,7 @@ app.controller('certController', function ($scope, $timeout) {
     // Mock Data
     var mockData = {
         certid: "efdb3a43ecc102387080c46e0af44cc0",
-        certissuedate: "25 Sep 2025",
+        certissuedate: "04 Oct 2025",
         studentname: "Abhishek  Tiwari",
         institute: "G L Bajaj Institute of Technology & Management",
         eventname: "ALTERYX DATA ANALYTICS PROCESS AUTOMATION VIRTUAL INTERNSHIP (JUL - SEP 2025)",
